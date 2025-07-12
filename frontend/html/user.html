@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>View Profile - Skill Swap</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-50 p-6">
+  <!-- Navbar -->
+<nav class="bg-white p-4 shadow flex justify-between items-center">
+  <h1 class="text-xl font-bold">Skill Swap Platform</h1>
+  <div class="flex items-center gap-4">
+    <span id="greeting" class="text-sm text-gray-700"></span>
+    <a href="profile.html" class="bg-blue-500 text-white px-3 py-1 rounded">My Profile</a>
+    <a href="requests.html" class="bg-indigo-500 text-white px-3 py-1 rounded">Requests</a>
+    <button id="logoutBtn" class="bg-red-500 text-white px-3 py-1 rounded">Logout</button>
+  </div>
+</nav>
+  <div class="max-w-2xl mx-auto bg-white p-6 shadow rounded">
+    <div class="flex items-center gap-4">
+      <img src="assets/placeholder.png" alt="Profile picture" class="w-20 h-20 rounded-full">
+      <div>
+        <h2 class="text-2xl font-semibold">Ravi Mehta</h2>
+        <p><strong>Offers:</strong> JavaScript, UI Design</p>
+        <p><strong>Wants:</strong> AI/ML</p>
+        <p class="text-sm text-gray-500">Availability: Weekends</p>
+      </div>
+    </div>
+
+    <hr class="my-4">
+
+    <form class="space-y-4" action="#" method="post">
+      <label class="block font-medium" for="your-skill">Your Skill You Offer</label>
+      <input id="your-skill" name="your_skill" type="text" placeholder="e.g., React" class="w-full p-2 border rounded">
+
+      <label class="block font-medium" for="skill-want">Skill You Want to Learn</label>
+      <input id="skill-want" name="skill_want" type="text" placeholder="e.g., Photoshop" class="w-full p-2 border rounded">
+
+      <label class="block font-medium" for="message">Message (Optional)</label>
+      <textarea id="message" name="message" class="w-full p-2 border rounded" placeholder="Write a short note..."></textarea>
+
+      <button type="submit" class="bg-indigo-600 text-white px-4 py-2 rounded">Send Swap Request</button>
+    </form>
+  </div>
+<script src="js/toast.js"></script>
+<script src="js/loader.js"></script>
+<!-- Add page-specific script below -->
+<script src="js/auth.js"></script>      <!-- Only on login.html -->
+<script src="js/profile.js"></script>   <!-- Only on profile.html -->
+<script src="js/swap.js"></script>      <!-- Only on user.html -->
+<script src="js/requests.js"></script> 
+<script src="js/toast.js"></script>
+<script src="js/loader.js"></script>
+<script src="js/navbar.js"></script>
+<script src="js/logout.js"></script>
+ <!-- Only on requests.html -->
+</script>
+</div>
+</body>
+</html>
+<!-- This is a simple profile view page for Skill Swap. It includes a form to send a swap request. -->

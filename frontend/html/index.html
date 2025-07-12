@@ -8,14 +8,16 @@
 </head>
 <body class="bg-gray-50 text-gray-900">
 
-  <!-- Navbar -->
-  <nav class="bg-white shadow p-4 flex justify-between items-center">
-    <h1 class="text-xl font-bold">Skill Swap Platform</h1>
-    <div>
-      <a href="login.html" class="px-4 py-2 bg-blue-500 text-white rounded">Login</a>
-      <a href="profile.html" class="ml-2 px-4 py-2 bg-green-500 text-white rounded">My Profile</a>
-    </div>
-  </nav>
+<!-- Navbar -->
+<nav class="bg-white p-4 shadow flex justify-between items-center">
+  <h1 class="text-xl font-bold">Skill Swap Platform</h1>
+  <div class="flex items-center gap-4">
+    <span id="greeting" class="text-sm text-gray-700"></span>
+    <a href="profile.html" class="bg-blue-500 text-white px-3 py-1 rounded">My Profile</a>
+    <a href="requests.html" class="bg-indigo-500 text-white px-3 py-1 rounded">Requests</a>
+    <button id="logoutBtn" class="bg-red-500 text-white px-3 py-1 rounded">Logout</button>
+  </div>
+</nav>
 
   <!-- Search Bar -->
   <div class="p-6">
@@ -55,6 +57,16 @@
   <footer class="text-center p-4 text-sm text-gray-500">
     &copy; 2025 Skill Swap Platform. All rights reserved.
   </footer>
-
+  <script src="js/toast.js"></script>
+  <script src="js/loader.js"></script>
+  <!-- Add page-specific script below -->
+  <script src="js/auth.js"></script>      <!-- Only on login.html -->
+  <script src="js/profile.js"></script>   <!-- Only on profile.html -->
+  <script src="js/swap.js"></script>      <!-- Only on user.html -->
+  <script src="js/requests.js"></script>  <!-- Only on requests.html -->
+  <script src="js/toast.js"></script>
+  <script src="js/loader.js"></script>
+  <script src="js/navbar.js"></script>
+  <script src="js/logout.js"></script>
 </body>
 </html>

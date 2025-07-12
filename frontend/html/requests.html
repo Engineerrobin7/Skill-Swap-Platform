@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Requests - Skill Swap</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-50 p-6">
+  <!-- Navbar -->
+<nav class="bg-white p-4 shadow flex justify-between items-center">
+  <h1 class="text-xl font-bold">Skill Swap Platform</h1>
+  <div class="flex items-center gap-4">
+    <span id="greeting" class="text-sm text-gray-700"></span>
+    <a href="profile.html" class="bg-blue-500 text-white px-3 py-1 rounded">My Profile</a>
+    <a href="requests.html" class="bg-indigo-500 text-white px-3 py-1 rounded">Requests</a>
+    <button id="logoutBtn" class="bg-red-500 text-white px-3 py-1 rounded">Logout</button>
+  </div>
+</nav>
+  <div class="max-w-5xl mx-auto">
+    <h1 class="text-2xl font-bold mb-4">My Swap Requests</h1>
+
+    <!-- Tabs (Mocked) -->
+    <div class="flex gap-4 mb-4">
+      <button class="bg-blue-500 text-white px-4 py-2 rounded">Sent</button>
+      <button class="bg-gray-300 px-4 py-2 rounded">Received</button>
+    </div>
+
+    <!-- Request Cards -->
+    <div class="bg-white p-4 rounded shadow mb-4">
+      <p><strong>To:</strong> Sarah Ali</p>
+      <p><strong>Offered:</strong> Excel &nbsp;&nbsp; | &nbsp;&nbsp;<strong>Wanted:</strong> Photoshop</p>
+      <p class="text-sm text-gray-600">Status: <span class="text-yellow-600">Pending</span></p>
+      <button class="mt-2 bg-red-500 text-white px-3 py-1 rounded">Cancel</button>
+    </div>
+  </div>
+<script src="js/toast.js"></script>
+<script src="js/loader.js"></script>
+<!-- Add page-specific script below -->
+<script src="js/auth.js"></script>      <!-- Only on login.html -->
+<script src="js/profile.js"></script>   <!-- Only on profile.html -->
+<script src="js/swap.js"></script>      <!-- Only on user.html -->
+<script src="js/requests.js"></script> 
+<script src="js/toast.js"></script>
+<script src="js/loader.js"></script>
+<script src="js/navbar.js"></script>
+<script src="js/logout.js"></script>
+ <!-- Only on requests.html -->
+
+</body>
+</html>
